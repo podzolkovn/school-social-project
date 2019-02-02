@@ -31,6 +31,8 @@ gem 'popper_js'
 gem 'simple_form'
 gem 'tether-rails'
 
+gem 'activeadmin'
+
 group :development do
   gem 'guard'
 end
