@@ -21,3 +21,6 @@
 /yarn-error.log
 
 .byebug_history
+app/controllers/application_controller.rb
+Gemfile
+Gemfile.lock

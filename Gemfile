@@ -32,6 +32,7 @@ gem 'simple_form'
 gem 'tether-rails'
 
 gem 'activeadmin'
+gem 'rails_admin'
 
 group :development do
   gem 'guard'
