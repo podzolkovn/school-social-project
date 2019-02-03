@@ -1,0 +1,43 @@
+<% @posts.each do |post| %>
+    @ <%= posts.user.name %>
+<p class="time post_writed">| <%= post.created_at.strftime("%d %m %Y %H : %M") %>
+</p>
+<div class="wrap">
+    <div class="card-text post_writed text_wrap"><%= post.description %> </div>
+</div>
+
+     <% if post.attachment.attached? %>
+  <% if post.attachment.content_type.include?("image") %>
+    <div class="card_body"> <%= image_tag post.attachment, class: "image text-center"  %> </div>
+  <% else %>
+    <%= video_tag url_for(post.attachment), :controls => true , class: "video" %>
+  <% end %>
+<% end %>
+
+
+
+
+         <%= link_to(post_path(post)) do %>
+               <p class="time">
+                 <i class="fa fa-comment-o text-secondary pr-1 nickname_text"></i>
+                  <%= post.comments.count %> комментариев
+               </p>
+             <% end %>
+              <%= link_to(likes_toggle_path(post)) do %>
+              <p class="time">
+                | <i class="fa fa-gg-circle text-warning pr-1 nickname_text"></i>
+                <%= post.likes.count %> лайк-бонусов
+                </p>
+              <% end %>
+
+
+              <%= link_to(user_path(post.user)) do %>
+              @ <%= comment.user.name %>
+              <p class="time_comment post_writed"> | <%= comment.created_at.strftime("%d %m %Y %H : %M") %></p>
+               <div class="wrap">
+                  <div class="card-text post_writed time text_wrap"><%= comment.body %> </div>
+                  <% end %> 
+
+                  <% end %>
+
+             

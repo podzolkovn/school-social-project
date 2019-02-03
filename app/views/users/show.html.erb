@@ -1,0 +1,28 @@
+<% @posts.each do |post| %> 
+<div class="container" style=" max-width: 400px">
+<div class="card" style="margin-bottom: 20px; padding: 10px">
+  <div class="card-body">
+    <h2> @<%= post.user.name %> </h2>
+    <h5 class="card-title"> <%= post.title %> </h5>
+    <p class="card-text"><small class="text-muted"> <%= post.created_at %></small></p>
+  </div>
+  <div>	<%= image_tag post.image, style: 'width: 340px' if post.image.attached? %> </div>
+
+  <% post.comments.each do |comment| %>
+  <%= comment.user.name %> 
+    <p class="card-text"> <%= comment.body %> </p>
+
+  <% end %>
+<% if is_already_liked?(post) %>  
+     <%= link_to dislike_path(post), method: :post do %>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+     <% end %>
+<% else %> 
+   <%= link_to like_path(post), method: :post do %>
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+   <% end %>  
+<% end %> 
+ <%= render 'comments/form', post: post %> 
+</div>
+</div>
+<% end %> 

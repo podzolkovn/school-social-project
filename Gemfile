@@ -35,9 +35,7 @@ group :development do
   gem 'guard'
 end
 
-
 gem 'devise'
-
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -61,15 +59,13 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-
-#bootstrap 4 
+# bootstrap 4
+gem 'activeadmin'
 gem 'bootstrap', '~>4.2.1'
 gem 'jquery-rails'
-gem 'simple_form'
 gem 'popper_js'
+gem 'simple_form'
 gem 'tether-rails'
-gem 'activeadmin'
-

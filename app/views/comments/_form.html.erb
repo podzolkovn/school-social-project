@@ -1,0 +1,6 @@
+<%= form_with scope: :comment, url: comments_path, local: true do |f| %>
+	 <%= f.text_area :body, class: 'form-group' %>
+    <%= f.hidden_field :post_id, value: post.id %>
+    <%= f.submit class: 'btn btn-secondary' %>
+    
+<% end %>

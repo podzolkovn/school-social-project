@@ -4,18 +4,18 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "School Social Project"
+  config.site_title = 'School Social Project'
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
   # config.site_title_link = "/"
-config.authentication_method = :authenticate_user!
-config.authorization_adapter = Adapters::OnlyAdmins
-config.on_unauthorized_access = :access_denied
-config.current_user_method = :current_user
-config.logout_link_path = :destroy_user_session_path
-config.logout_link_method = :delete
+  config.authentication_method = :authenticate_user!
+  config.authorization_adapter = Adapters::OnlyAdmins
+  config.on_unauthorized_access = :access_denied
+  config.current_user_method = :current_user
+  config.logout_link_path = :destroy_user_session_path
+  config.logout_link_method = :delete
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #
