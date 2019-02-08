@@ -1,0 +1,29 @@
+.container-fluid{
+	background-image: url(images/back-fon_on_reg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.18);
+}
+
+h2 {
+	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+.field{
+	width: 300px;
+	margin-left: 30px;
+	text-align: left;
+}
+.actions {
+	width: 100px;
+	margin-left: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.actions .btn{
+	 padding: 0;
+	 color: black;
+}
