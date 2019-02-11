@@ -1,16 +1,24 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
 .container-fluid{
-	background-image: url(images/back-fon_on_reg.png);
+	color: #9a2828;
+	background-image: url(images/back-fon_on_reg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-color: rgba(0,0,0,0.18);
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'FontAwesome', sans-serif;
 }
 
-h2 {
+.container-fluid h2 {
 	font-size: 35px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 30px;
+	color: #9a2828;
+	
 }
 .field{
 	width: 300px;
@@ -23,7 +31,7 @@ h2 {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.actions .btn{
+ form input {
 	 padding: 0;
-	 color: black;
+	 border-radius: 0;
 }
