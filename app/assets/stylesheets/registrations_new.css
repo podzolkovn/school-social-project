@@ -10,6 +10,7 @@
 	background-size: cover;
 	background-color: rgba(0,0,0,0.2);
 	font-family: 'FontAwesome', sans-serif;
+	margin-top: 50px;
 }
 
 .container-fluid h2 {
@@ -31,7 +32,13 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
- form input {
-	 padding: 0;
-	 border-radius: 0;
+ .actions .button {
+ 	display: inline-block;
+ 	background-color: white;
+	 border-radius: 7px;
+	 font-family: 'FontAwesome', sans-serif;
+	 font-size: 15px;
+	 color:white;
+	 margin-left: 15px; 
+	
 }
