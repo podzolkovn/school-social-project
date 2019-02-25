@@ -3,26 +3,10 @@
 	font-size: 20px;
 	background-color: orange;	
 }
-.collapse ul li a{
-    color: white;
-    text-decoration: none;
-    text-align: none;
-}
 .collapse ul li{
 	margin-left: 15px;
 }
-.navbar-brand a:hover{
-    color: white;
-    text-decoration: none;
-}
-.nav-item{
-	text-decoration: none;
-}
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
-}
-
-a:link, a:visited {
     color: white;
     text-decoration: none;
 }
