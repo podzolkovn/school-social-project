@@ -3,12 +3,11 @@
 @import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
 
 .container-fluid{
-	color: #9a2828;
+	color: orange;
 	background-image: url(images/back-fon_on_reg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	background-color: rgba(0,0,0,0.2);
 	font-family: 'FontAwesome', sans-serif;
 	margin-top: 50px;
 }
@@ -18,7 +17,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 30px;
-	color: #9a2828;
+	color: orange;
 	
 }
 .field{
